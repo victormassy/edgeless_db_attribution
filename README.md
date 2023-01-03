@@ -1,3 +1,18 @@
+./refresh.sh
+Other tab:
+./filDB.sh 
+source input1;
+call attribution.init_aggregated(100);
+quit; 
+cd reader
+era -c ../edgelessdb-sgx.json -h localhost:8080 -output-root edb.pem
+mysql -h127.0.0.1 -ureader --ssl-ca edb.pem --ssl-cert cert.pem --ssl-key key.pem
+call attribution.output_opt();
+quit; 
+
+
+
+
 # EdgelessDB demo walkthrough
 This demo shows how to initialize EdgelessDB with a manifest and how users verify and connect to EdgelessDB.
 
