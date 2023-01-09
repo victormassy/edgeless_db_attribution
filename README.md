@@ -1,5 +1,6 @@
 ./refresh.sh
 Other tab:
+./createDB.sh
 ./filDB.sh 
 source input1;
 call attribution.init_aggregated(100);
