@@ -88,5 +88,22 @@ chmod +x 100tests.sh
 
 Execution times are stored in file results.txt in microseconds (ms). 
 
+# Description of the database
+
+In the manifest file, I define 2 tables, 3 types of users, their permissions and some stored procedure. 
+
+writers can only write data into the database.
+
+readers can execute the output_opt() stored procedure and read the table aggregated. 
+
+fakeUser can acces data in the clear but can never be instantiated from outside the enclave. 
+
+The only stored procedure that can be executed from outside the enclave is output_opt(). It computes the attribution reporting process and store the result in the table aggregated.
+
+The manifest file also initiate the database. 
+
+
+
+
 
 
