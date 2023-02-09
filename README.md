@@ -18,7 +18,7 @@ Unzip input:
  
 ```
 cd input
-unzip TODO
+unzip 
 ```
 
 Copy one input file as source:
@@ -83,7 +83,7 @@ Some scripts can be used to run multiple tests. For these scipts to work, you ne
  - Run tests:
 ``` 
 chmod +x 100tests.sh 
-./100tests.sh 
+./100tests.sh 12
 ```
 
 Execution times are stored in file results.txt in microseconds (ms). 
