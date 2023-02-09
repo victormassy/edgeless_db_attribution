@@ -83,6 +83,7 @@ Some scripts can be used to run multiple tests. For these scipts to work, you ne
  - Run tests:
 ``` 
 chmod +x 100tests.sh 
+chmod +x 10tests.sh
 ./100tests.sh 12
 ```
 
